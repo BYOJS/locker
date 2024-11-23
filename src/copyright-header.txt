@@ -1,0 +1,4 @@
+/*! --TODO--: #FILENAME#
+    v#VERSION# (c) #YEAR# --TODO--
+    MIT License: http://mit-license.org
+*/

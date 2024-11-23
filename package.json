@@ -1,0 +1,38 @@
+{
+	"name": "@byojs/--TODO--",
+	"description": "--TODO--",
+	"version": "0.0.0-TODO",
+	"exports": {
+		"./": "./dist/--TODO--.mjs"
+	},
+	"browser": {
+		"@byojs/--TODO--": "./dist/--TODO--.mjs"
+	},
+	"scripts": {
+		"build:all": "node scripts/build-all.js",
+		"build:gh-pages": "npm run build:all && node scripts/build-gh-pages.js",
+		"build": "npm run build:all",
+		"test:start": "npx http-server test/ -p 8080",
+		"test": "npm run test:start",
+		"postinstall": "node scripts/postinstall.js",
+		"prepublishOnly": "npm run build:all"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"micromatch": "~4.0.8",
+		"recursive-readdir-sync": "~1.0.6",
+		"terser": "~5.31.6"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/byojs/--TODO--.git"
+	},
+	"keywords": [],
+	"bugs": {
+		"url": "https://github.com/byojs/--TODO--/issues",
+		"email": "--TODO--"
+	},
+	"homepage": "https://github.com/byojs/--TODO--",
+	"author": "--TODO--",
+	"license": "MIT"
+}

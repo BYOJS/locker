@@ -1,9 +1,9 @@
 {
 	"name": "@byojs/locker",
 	"description": "Exclusive, stackable locking to control concurrent access to shared resource(s)",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"exports": {
-		"./": "./dist/locker.mjs"
+		".": "./dist/locker.mjs"
 	},
 	"browser": {
 		"@byojs/locker": "./dist/locker.mjs"

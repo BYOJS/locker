@@ -39,10 +39,10 @@ async function main() {
 		/*skipPatterns=*/[ "**/src", "**/dist", ]
 	);
 
-	// patch import reference in test.js to point to dist/
-	var testJSPath = path.join(BUILD_DIR,"test.js");
+	// patch import reference in browser.js to point to dist/
+	var testJSPath = path.join(BUILD_DIR,"browser.js");
 	var testJSContents = await fsp.readFile(testJSPath,{ encoding: "utf8", });
-	testJSContents = testJSContents.replace(/(import[^;]+"--TODO--\/)src([^"]*)"/g,"$1dist$2\"");
+	testJSContents = testJSContents.replace(/(import[^;]+"locker\/)src([^"]*)"/g,"$1dist$2\"");
 	await fsp.writeFile(testJSPath,testJSContents,{ encoding: "utf8", });
 
 	// copy dist/* files

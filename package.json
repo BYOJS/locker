@@ -1,19 +1,19 @@
 {
-	"name": "@byojs/--TODO--",
-	"description": "--TODO--",
-	"version": "0.0.0-TODO",
+	"name": "@byojs/locker",
+	"description": "Exclusive, stackable locking to control concurrent access to shared resource(s)",
+	"version": "0.0.1",
 	"exports": {
-		"./": "./dist/--TODO--.mjs"
+		"./": "./dist/locker.mjs"
 	},
 	"browser": {
-		"@byojs/--TODO--": "./dist/--TODO--.mjs"
+		"@byojs/locker": "./dist/locker.mjs"
 	},
 	"scripts": {
 		"build:all": "node scripts/build-all.js",
 		"build:gh-pages": "npm run build:all && node scripts/build-gh-pages.js",
 		"build": "npm run build:all",
 		"test:start": "npx http-server test/ -p 8080",
-		"test": "npm run test:start",
+		"test": "node --experimental-default-type=module test/cli.js",
 		"postinstall": "node scripts/postinstall.js",
 		"prepublishOnly": "npm run build:all"
 	},
@@ -25,14 +25,20 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/byojs/--TODO--.git"
+		"url": "git+https://github.com/byojs/locker.git"
 	},
-	"keywords": [],
+	"keywords": [
+		"mutex",
+		"semaphore",
+		"lock",
+		"async",
+		"concurrency"
+	],
 	"bugs": {
-		"url": "https://github.com/byojs/--TODO--/issues",
-		"email": "--TODO--"
+		"url": "https://github.com/byojs/locker/issues",
+		"email": "locker"
 	},
-	"homepage": "https://github.com/byojs/--TODO--",
-	"author": "--TODO--",
+	"homepage": "https://github.com/byojs/locker",
+	"author": "locker",
 	"license": "MIT"
 }

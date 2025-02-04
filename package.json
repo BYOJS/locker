@@ -1,7 +1,7 @@
 {
 	"name": "@byojs/locker",
 	"description": "Exclusive, stackable locking to control concurrent access to shared resource(s)",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"exports": {
 		".": "./dist/locker.mjs"
 	},
@@ -21,7 +21,7 @@
 	"devDependencies": {
 		"micromatch": "~4.0.8",
 		"recursive-readdir-sync": "~1.0.6",
-		"terser": "~5.31.6"
+		"terser": "~5.37.0"
 	},
 	"repository": {
 		"type": "git",
